@@ -1,9 +1,0 @@
-{
-  "name": "Calculator",
-  "short_name": "Calc",
-  "start_url": ".",
-  "display": "standalone",
-  "background-color":"cyan",
-  "description":"Simple Calculator",
-  
-}

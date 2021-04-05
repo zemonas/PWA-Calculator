@@ -1,0 +1,14 @@
+{
+  "name": "Calculator",
+  "short_name": "Calc",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background-color":"#00FFFF",
+  "description":"Simple Calculator",
+  "orientation": "portrait-primary",
+  "icons":{
+    "src":"/images/icon.png",
+    "sizes":"344x344",
+    "type":"image/png",
+  }
+}
