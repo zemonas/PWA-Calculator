@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#00FFFF">
     <meta name="description" content="Simple Calculator">
+    <link rel="apple-touch-icon" href="/images/icon192x192.png">
     <script  src="script.js" defer></script>
-    <script  src="sw.js" defer></script>
-    <link rel="manifest" href="/manifest.json">
-    <title></title>
+    <link rel="manifest" href="manifest.json">
+    <title>Calculator</title>
   </head>
   <body>
     <div class="con">
@@ -34,9 +34,15 @@
       <button data-numbers>9</button>
       <button data-operation>+</button>
       <button data-numbers>.</button>
-      <button data-numbers class="col-2">0</button>
-      <button data-equal >=</button>
+      <button data-numbers >0</button>
+      <button data-equal class="col-2">=</button>
     </div>
-
+    <script type="text/javascript">
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js')
+          .then((reg) => console.log("sw registered", reg))
+          .catch((err)=> console.log("sw not registered", err))
+      }
+    </script>
   </body>
 </html>
